@@ -8,6 +8,25 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for the new icon elements */
+        .feature-icon {
+            width: 120px;
+            height: auto;
+            border-radius: 20px; /* Matches the hero image */
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .play-badge {
+            width: 250px; 
+            margin-top: 10px;
+            border-radius: 12px; /* Softened corners for the badge */
+            transition: transform 0.3s ease;
+        }
+        .play-badge:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
 
@@ -26,14 +45,14 @@
         <div class="hero-content">
             <h1>Free Games.<br>For Everyone. Forever.</h1>
             <p style="font-size: 1.2rem; color: var(--text-primary);">
-                No payments. No Adds. Full offline experience.
+                No payments. No Ads. Full offline experience.
             </p>
             <p>
-                Experience a growing collection of high-quality games designed for pure entertainment. No ads, no interruptions, just play.
+                Experience a growing collection of high-quality games designed for pure entertainment. No interruptions, just play.
             </p>
             
             <a href="#" target="_blank">
-                <img src="assets/google-play-badge.png" alt="Get it on Google Play" style="width: 250px; margin-top: 10px;">
+                <img src="assets/google-play-badge.png" alt="Get it on Google Play" class="play-badge">
             </a>
         </div>
         
@@ -45,15 +64,15 @@
     <section style="background-color: rgba(255,255,255,0.02);">
         <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; text-align: center;">
             <div>
-                <h4 style="color: var(--secondary-main);">100% Free</h4>
-                <p>No hidden costs, no microtransactions, no adds and no "pay-to-win." Gaming as it should be.</p>
+                <img src="assets/gamfri-free-icon-450.png" alt="100% Free" class="feature-icon">
+                <p>No hidden costs, no microtransactions, no ads and no "pay-to-win." Gaming as it should be.</p>
             </div>
             <div>
-                <h4 style="color: var(--secondary-main);">Full Offline</h4>
+                <img src="assets/gamfri-offline-icon-450.png" alt="Full Offline" class="feature-icon">
                 <p>Play your favorite games anywhere, even without an internet connection. Perfect for travel.</p>
             </div>
             <div>
-                <h4 style="color: var(--secondary-main);">Privacy First</h4>
+                <img src="assets/gamfri-private-icon-450.png" alt="Privacy First" class="feature-icon">
                 <p>No accounts required. We don't track you or collect your data. Your high scores stay on your device.</p>
             </div>
         </div>

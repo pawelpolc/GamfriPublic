@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamfri | Free Games. For Everyone. Forever.</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styles for the new icon elements */
+        .feature-icon {
+            width: 120px;
+            height: auto;
+            border-radius: 20px; /* Matches the hero image */
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .play-badge {
+            width: 250px; 
+            margin-top: 10px;
+            border-radius: 12px; /* Softened corners for the badge */
+            transition: transform 0.3s ease;
+        }
+        .play-badge:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-content">
+            <div class="logo">GAMFRI</div>
+            <nav class="footer-links" style="margin-bottom: 0;">
+                <a href="#vision">Our Vision</a>
+                <a href="#games">Games</a>
+                <a href="privacy-policy.html">Privacy</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container hero">
+        <div class="hero-content">
+            <h1>Free Games.<br>For Everyone. Forever.</h1>
+            <p style="font-size: 1.2rem; color: var(--text-primary);">
+                No payments. No Ads. Full offline experience.
+            </p>
+            <p>
+                Experience a growing collection of high-quality games designed for pure entertainment. No interruptions, just play.
+            </p>
+            
+            <a href="#" target="_blank">
+                <img src="assets/google-play-badge.png" alt="Get it on Google Play" class="play-badge">
+            </a>
+        </div>
+        
+        <div class="hero-image">
+            <img src="assets/gamfri-poster01-512.png" alt="Gamfri Games Collection">
+        </div>
+    </section>
+
+    <section style="background-color: rgba(255,255,255,0.02);">
+        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; text-align: center;">
+            <div>
+                <img src="assets/gamfri-free-icon-450.png" alt="100% Free" class="feature-icon">
+                <p>No hidden costs, no microtransactions, no ads and no "pay-to-win." Gaming as it should be.</p>
+            </div>
+            <div>
+                <img src="assets/gamfri-offline-icon-450.png" alt="Full Offline" class="feature-icon">
+                <p>Play your favorite games anywhere, even without an internet connection. Perfect for travel.</p>
+            </div>
+            <div>
+                <img src="assets/gamfri-private-icon-450.png" alt="Privacy First" class="feature-icon">
+                <p>No accounts required. We don't track you or collect your data. Your high scores stay on your device.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision" class="container" style="max-width: 800px; text-align: center;">
+        <h2>Our Mission</h2>
+        <p>
+            Gamfri was born out of a simple idea: gaming should be accessible, private, and fun for everyone. As an independent developer, my goal is to strip away the noise of modern mobile gaming—the endless logins, the data tracking, and the aggressive monetization.
+        </p>
+        <p>
+            I am building a platform where the only thing that matters is the gameplay. Every game added to the Gamfri ecosystem is hand-picked to ensure it provides immediate fun and lasting value, all while respecting your time and your privacy.
+        </p>
+    </section>
+
+    <section id="games" class="container" style="text-align: center;">
+        <h2>The Collection</h2>
+        <p>A diverse library of logic, action, and puzzle games—ready to play instantly.</p>
+        <div style="border: 1px dashed var(--text-secondary); padding: 40px; border-radius: 15px; color: var(--text-secondary);">
+            Explore games like Mighty Chess, Monster Rage, and more directly in the app.
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#vision">Vision</a>
+                <a href="#games">Games</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </div>
+            <p style="font-size: 0.8rem;">
+                &copy; 2026 Gamfri Labs. Operated by Paweł Polc (Dotsoft Paweł Polc).<br>
+                Google Play and the Google Play logo are trademarks of Google LLC.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

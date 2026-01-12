@@ -1,0 +1,159 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    /* Colors from your React Theme */
+    --bg-default: #060721;
+    --text-primary: #c9d1d9;
+    --text-secondary: #a0a0a0;
+    --primary-main: #3f51b5;
+    --secondary-main: #f50057;
+    
+    /* Spacing and Borders */
+    --container-width: 1100px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-default);
+    color: var(--text-primary);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Typography matching your MUI Typography settings */
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h4 { margin-bottom: 1.5rem; } /* Matches your h4: {marginBottom: '1rem'} */
+
+p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+/* Layout Containers */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+/* MUI-style Sticky AppBar */
+header {
+    background-color: var(--bg-default);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(201, 209, 217, 0.1);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+/* Buttons translated from MuiButton settings */
+.btn {
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: none; /* Matches your button: {textTransform: 'none'} */
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background-color: var(--secondary-main); /* Using pink for CTA visibility */
+    color: white;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.2);
+    transform: translateY(-2px);
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 80vh;
+}
+
+.hero-content { flex: 1; }
+.hero-image { flex: 1; text-align: right; }
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .hero-image { text-align: center; }
+    h1 { font-size: 2.2rem; }
+}
+
+/* Footer Styles */
+footer {
+    padding: 50px 0;
+    border-top: 1px solid rgba(201, 209, 217, 0.1);
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.footer-links a:hover {
+    color: var(--text-primary);
+}

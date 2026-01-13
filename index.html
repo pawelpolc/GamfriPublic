@@ -6,34 +6,14 @@
     <title>Gamfri | Free Games. For Everyone. Forever.</title>
     
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Specific styles for the new icon elements */
-        .feature-icon {
-            width: 120px;
-            height: auto;
-            border-radius: 20px; /* Matches the hero image */
-            margin-bottom: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-        .play-badge {
-            width: 250px; 
-            margin-top: 10px;
-            border-radius: 12px; /* Softened corners for the badge */
-            transition: transform 0.3s ease;
-        }
-        .play-badge:hover {
-            transform: scale(1.05);
-        }
-    </style>
 </head>
 <body>
 
     <header>
         <div class="container nav-content">
             <div class="logo">GAMFRI</div>
-            <nav class="footer-links" style="margin-bottom: 0;">
+            <nav class="footer-links nav-reset">
                 <a href="privacy-policy.html">Privacy Policy</a>
             </nav>
         </div>
@@ -42,7 +22,7 @@
     <section class="container hero">
         <div class="hero-content">
             <h1>Games for Free.<br>For Everyone. Forever.</h1>
-            <p style="font-size: 1.2rem; color: var(--text-primary);">
+            <p class="hero-subtitle">
                 No payments. No Ads. Full offline experience.
             </p>
             <p>
@@ -59,8 +39,8 @@
         </div>
     </section>
 
-    <section style="background-color: rgba(255,255,255,0.02);">
-        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; text-align: center;">
+    <section class="features-section">
+        <div class="container features-grid">
             <div>
                 <img src="assets/gamfri-free-icon-450.png" alt="100% Free" class="feature-icon">
                 <p>No hidden costs, no microtransactions, no ads and no "pay-to-win." Gaming as it should be.</p>
@@ -76,7 +56,7 @@
         </div>
     </section>
 
-    <section id="mission" class="container" style="max-width: 800px; text-align: center; margin-top: 80px;">
+    <section id="mission" class="container content-narrow text-center">
         <h2>Our Mission</h2>
         <p>
             Gamfri was born out of a simple idea: gaming should be accessible, private, and fun for everyone. My goal is to strip away the noise of modern mobile gaming — pay-to-win, the data tracking, and the aggressive monetization.
@@ -89,19 +69,19 @@
         </p>
     </section>
 
-    <section id="games" class="container" style="text-align: center; margin-top: 80px;">
+    <section id="games" class="container text-center">
         <h2>The Collection</h2>
         <p>A diverse library of logic, action, and puzzle games—ready to play instantly.</p>
-        <div style="border: 1px dashed var(--text-secondary); padding: 40px; border-radius: 15px; color: var(--text-secondary);">
+        <div class="games-showcase">
             <p>Explore games like Mighty Chess, Mosaic Swipe, Circle Racing, and more directly in the app.</p>
             <p>
-                <img src="assets/gamfri-game-logos-1000.png" alt="Games" style="width: auto; height: auto;">
+                <img src="assets/gamfri-game-logos-1000.png" alt="Games" class="games-showcase-img">
             </p>
             <p>The platform will continue to grow through the regular addition of new games.</p>
         </div>
     </section>
 
-    <section id="support" class="container" style="max-width: 800px; text-align: center; margin-top: 80px;">
+    <section id="support" class="container content-narrow text-center">
         <h2>Support</h2>
         <p>
             Support options are coming soon! I’m excited to share more details on how you can get involved and help this platform thrive. Stay tuned for updates.
@@ -115,7 +95,7 @@
                 <a href="#games">Games</a>
                 <a href="privacy-policy.html">Privacy Policy</a>
             </div>
-            <p style="font-size: 0.8rem;">
+            <p class="footer-copy">
                 &copy; 2026 Gamfri Labs. Operated by Dotsoft Pawel Polc.<br>
                 Google Play and the Google Play logo are trademarks of Google LLC.
             </p>

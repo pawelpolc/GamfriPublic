@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
-    /* Colors from your React Theme */
     --bg-default: #060721;
     --text-primary: #c9d1d9;
     --text-secondary: #a0a0a0;
@@ -28,7 +27,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Typography matching your MUI Typography settings */
 h1, h2, h3, h4, h5 {
     font-weight: 600;
     line-height: 1.2;
@@ -37,7 +35,7 @@ h1, h2, h3, h4, h5 {
 
 h1 { font-size: 3rem; }
 h2 { font-size: 2.5rem; }
-h4 { margin-bottom: 1.5rem; } /* Matches your h4: {marginBottom: '1rem'} */
+h4 { margin-bottom: 1.5rem; }
 
 p {
     color: var(--text-secondary);
@@ -50,15 +48,42 @@ a {
     transition: var(--transition);
 }
 
-/* Layout Containers */
+/* Layout & Spacing */
+section {
+    padding: 0;
+}
+
 .container {
     max-width: var(--container-width);
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 80px 50px 0;
 }
 
-section {
-    padding: 100px 0;
+header .container {
+    padding: 0 50px;
+}
+
+.hero.container {
+    padding: 50px;
+}
+
+.features-grid.container {
+    padding: 50px;
+}
+
+footer .container {
+    padding: 30px;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.content-narrow {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* MUI-style Sticky AppBar */
@@ -80,26 +105,32 @@ header {
     width: 100%;
 }
 
+.nav-reset {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--text-primary);
 }
 
-/* Buttons translated from MuiButton settings */
+/* Buttons */
 .btn {
     display: inline-block;
     padding: 12px 32px;
     border-radius: 8px;
     font-weight: 600;
-    text-transform: none; /* Matches your button: {textTransform: 'none'} */
+    text-transform: none;
     cursor: pointer;
     border: none;
     transition: var(--transition);
 }
 
 .btn-primary {
-    background-color: var(--secondary-main); /* Using pink for CTA visibility */
+    background-color: var(--secondary-main);
     color: white;
 }
 
@@ -120,26 +151,67 @@ header {
 .hero-content { flex: 1; }
 .hero-image { flex: 1; text-align: right; }
 
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+}
+
 .hero-image img {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 50px;
-    }
-    .hero-image { text-align: center; }
-    h1 { font-size: 2.2rem; }
+.play-badge {
+    width: 250px; 
+    margin-top: 10px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.play-badge:hover {
+    transform: scale(1.05);
+}
+
+/* Features Section */
+.features-section {
+    background-color: rgba(255,255,255,0.02);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.feature-icon {
+    width: 120px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Games Collection Section */
+.games-showcase {
+    border: 1px dashed var(--text-secondary);
+    padding: 40px;
+    border-radius: 15px;
+    color: var(--text-secondary);
+}
+
+/* Logic for the games image */
+.games-showcase-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Footer Styles */
 footer {
-    padding: 50px 0;
     text-align: center;
 }
 
@@ -155,4 +227,23 @@ footer {
 
 .footer-links a:hover {
     color: var(--text-primary);
+}
+
+.footer-copy {
+    font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 50px; 
+    }
+    .hero-image { text-align: center; }
+    h1 { font-size: 2.2rem; }
+    
+    .games-showcase {
+        padding: 20px;
+    }
 }
